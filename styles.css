@@ -1,0 +1,168 @@
+#navbarLogo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.onimage {
+  background-color: #009e60a5;
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+}
+
+body {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #009e60;
+}
+
+#mainNav2 {
+  background-color: #009e60;
+  color: white;
+}
+
+#navbar-brand2 {
+  color: white;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.col-lg-9.center_div {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/*
+copy from styles
+-webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #868e96;
+--gray-dark: #343a40;
+--primary: #009e60;
+--secondary: #868e96;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+font-size: 1rem;
+line-height: 1.5;
+font-family: myriad-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+text-align: center!important;
+color: #fff!important;
+box-sizing: border-box;
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+*/
+
+.slideshow {
+  position: static;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(assets/img/fullsize/photo-1558944351-3f79926e74ef.jpg);
+}
+.slideshow li:nth-child(2) {
+  background-image: url(assets/img/fullsize/photo-1541358800921-39f1c44bdde8.jpeg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(assets/img/fullsize/photo-1545078194-2ec3c4e53ed1.jpeg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(assets/img/fullsize/photo-1573052905904-34ad8c27f0cc.jpeg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(assets/img/fullsize/photo-1523633891499-c72d7aa7594f.jpeg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
