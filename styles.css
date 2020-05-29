@@ -54,6 +54,10 @@ header {
   width: 75%;
 }
 
+#text-responsive {
+  font-size: calc(100% + 0.75vw + 0.75vh);
+}
+
 /*
 copy from styles
 -webkit-tap-highlight-color: transparent;
